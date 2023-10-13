@@ -1,0 +1,36 @@
+.cartDesign{
+
+    width: 400px;
+}
+
+@media only screen and (max-width: 600px){
+
+    .cartDesign{
+
+        width: 60vw;
+    }
+}
+
+.cardTitle{
+
+    height: 80px;
+}
+
+@media only screen and (max-width: 575px){
+
+    .cardTitle{
+
+        height: 30px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+
+    .cardFont{
+
+        font-size: 18px;
+    }
+}
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saçaklı Pet Shop</title>
+    <script src="https://kit.fontawesome.com/44a51d619a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="bg-secondary-subtle d-flex flex-column flex-md-row justify-content-around align-items-center">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <div>
+                <i class="fa-solid fa-phone me-2"></i>555-555-55-55
+            </div>
+
+            <div class="ms-md-3">
+                Please call for bulk purchases.
+            </div>
+        </div>
+
+        <div class="d-flex  justify-content-between">
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    TL
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">EURO</a></li>
+                    <li><a class="dropdown-item" href="#">DOLLAR</a></li>
+                </ul>
+            </div>
+            <div class="dropdown">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Turkish
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">English</a></li>
+                    <li><a class="dropdown-item" href="#">German</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <span><img src="img/logo1-edit.jpg" height="50px" alt=""></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-uppercase">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#whyUs">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catFood">Cat Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#catProducts">Cat Accesories</a>
+                    </li>
+                </ul>
+                <div class="d-flex justify-content-between">
+                    <button class="btn btn-outline-success mb-2 mb-lg-0" type="button" data-bs-toggle="modal"
+                        data-bs-target="#searchModal">Search</button>
+                    <div class="nav-item btn ms-auto ms-lg-0">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-fw fa-user"></i></a>
+                    </div>
+                    <div class="nav-item dropstart btn">
+                        <button class="nav-link position-relative" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa-solid fa-lg fa-shopping-cart"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                2
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu cartDesign">
+                            <li>
+                                <div class="dropdown-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img src="img/nd-somon.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-md-7 text-center text-md-start">
+                                            <p class="small fw-bolder mb-0">ND Sterilized Dry Food - Salmon</p>
+                                            <p class="text-muted mb-0">Piece:1</p>
+                                            <p class="small fw-bolder mb-0">1500TL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="dropdown-item">
+                                    <div class="row">
+                                        <div class="col-md-5">
+                                            <img src="img/bozita-biftek.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="col-md-7 text-center text-md-start">
+                                            <p class="small fw-bolder mb-0">Bozita Wet Food - Beef</p>
+                                            <p class="text-muted mb-0">Piece:5</p>
+                                            <p class="small fw-bolder mb-0">150TL</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="dropdown-item">
+                                    <div
+                                        class="d-flex flex-column flex-md-row justify-content-between align-items-center px-4">
+                                        <p class="fw-semibold mb-0 lead text-muted">TOTAL:</p>
+                                        <p class="mb-0 fw-bolder">1650TL</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="dropdown-item">
+                                    <div
+                                        class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+                                        <a href="#" class="text-dark text-muted mb-3 mb-md-0">SHOPPING CART</a>
+                                        <button class="btn btn-outline-dark rounded-0 px-3">Proceed to Payment</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 mx-auto">
+                                <form action="">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search a product">
+                                        <button class="input-group-text"><i class="fa-solid fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <div id="carouselPromotions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="img/carousel1.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel2.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel3.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel4.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="img/carousel5.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselPromotions" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselPromotions" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button> -->
+                    </div>
+                </div>
+
+                <div
+                    class="col-md-5 text-center text-white d-flex flex-column align-items-center justify-content-center px-5 px-md-0">
+                    <h1 class="display-4">Everything you are looking for</h1>
+                    <p class="lead fs-4">Great selection of products for the best price</p>
+                    <p class="lead fs-4">Free-Delivery Option</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catFood" class="mt-4">
+        <div class="container">
+            <div class="row" id="catFood">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/nd-product-salmon.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">ND Sterilized Adult - Salmon - 10kg</h5>
+                            <p class="card-text">1500TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/nd-product-lamb.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">ND Sterilized Adult - Lamb - 10kg</h5>
+                            <p class="card-text">1500TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/nd-product-chicken.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">ND Sterilized Adult - Chicken - 10kg</h5>
+                            <p class="card-text">1500TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/nd-product-kitten.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">ND Kitten - Chicken/Morina - 1,5kg x 2</h5>
+                            <p class="card-text">450TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="text-success">
+
+            <div class="row" id="catProducts">
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/kedituvaleti.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">Moderna Cat Litter - 57cm</h5>
+                            <p class="card-text">1200TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/catgrass.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">Euro Gold Cat Grass</h5>
+                            <p class="card-text">100TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/cattree.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">Patihomes Cat House</h5>
+                            <p class="card-text">2000TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="card shadow">
+                        <img src="img/catfountain.jpg" class="card-img-top py-3 px-2" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title cardTitle cardFont">Ata Home Cat Fountain</h5>
+                            <p class="card-text">450TL</p>
+                            <a href="#" class="btn btn-success w-100">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-3" id="whyUs">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1 class="text-center">Why Us?</h1>
+                    <div class="">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="shadow text-danger rounded-circle p-3">
+                                <i class="fa-solid fa-fw fa-star"></i>
+                            </div>
+                                <p class="lead mt-2">Best product range on the internet</p>
+                        </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="shadow text-danger rounded-circle p-3">
+                                <i class="fa-solid fa-fw fa-trophy"></i>
+                            </div>
+                                <p class="lead mt-2">Affordable prices for all cat owners</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <img src="img/logo1-edit.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-secondary py-3">
+        <div class="container">
+            <div class="row align-items-center text-center text-md-start">
+                <div class="col-md-5 mb-3 mb-md-0">
+                    <img src="img/bozita.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-md-7 text-white">
+                    <h1>Saçaklı Pet Shop "Buy One, Get One 25% Off" <a href="" class="text-warning">Promotion</a></h1>
+                    <p class="lead"> Buy one bag of Bozita cat food and get a second bag at 25% off.</p>
+                    <small>The discount is applied to the lower-priced item in your purchase.</small> <br>
+                    <small>Available both in-store and online.</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-3">
+        <div class="container">
+            <h1 class="display-4 text-center mb-3">Contact Us</h1>
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Last name</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">Username</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <label for="validationCustom03" class="form-label">Address(State/City/Province/Street/Apt)</label>
+                  <input type="text" class="form-control" id="validationCustom03" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid address.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Subject</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>Cat Food</option>
+                    <option>Cat Toys</option>
+                    <option>Cat Litterbox</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid subject.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                      You must agree before submitting.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-success w-100" type="submit">Submit form</button>
+                </div>
+              </form>
+        </div>
+    </section>
+
+    <footer class="bg-light py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <h5>Saçaklı Pet Shop</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#catFood" class="text-decoration-none text-muted">Cat Food</a>
+                        </li>
+                        <li>
+                            <a href="#catProducts" class="text-decoration-none text-muted">Cat Products</a>
+                        </li>
+                        <li>
+                            <a href="#whyUs" class="text-decoration-none text-muted">About us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-4">
+                    <h5>Social Media</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted"><i class="fa-brands fa-fw fa-twitter"></i>Twitter</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted"><i class="fa-brands fa-fw fa-instagram"></i>Instagram</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-decoration-none text-muted"><i class="fa-brands fa-fw fa-youtube"></i>Youtube</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5>Contact</h5>
+                    <address>
+                        <strong>Saçaklı Pet Shop</strong> <br>
+                        Karşıyaka <br>
+                        İzmir <br>
+                        <a href="tel:+5555555555" class="text-decoration-none text-muted"><i class="fa-solid fa-fw fa-phone"></i>(555)555-55-55</a> <br>
+                        <a href="mailto:info@ozankanaat.com" class="text-decoration-none text-muted"><i class="fa-solid fa-fw fa-envelope"></i>info@ozankanaat.com</a>
+                    </address>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bg-secondary text-white text-center py-3">
+        <p class="lead mb-0">All Rights Reserver I Ozan KANAAT</p>
+    </div>
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
